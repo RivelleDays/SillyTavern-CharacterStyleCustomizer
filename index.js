@@ -3121,19 +3121,19 @@ function generateCharacterCSS(characterId, characterConfig, globalColorMapping) 
     if (specificColors.blockquoteBorder) {
         css += `
         ${characterSelector} .mes_text blockquote {
-            border-left: 3px solid ${specificColors.blockquoteBorder} !important;
+            border-color: ${specificColors.blockquoteBorder} !important;
         }
         `;
     } else if (colorMapping.blockquoteBorder === 'primary') {
         css += `
         ${characterSelector} .mes_text blockquote {
-            border-left: 3px solid var(--csc-char-primary) !important;
+            border-color: var(--csc-char-primary) !important;
         }
         `;
     } else if (colorMapping.blockquoteBorder === 'secondary') {
         css += `
         ${characterSelector} .mes_text blockquote {
-            border-left: 3px solid var(--csc-char-secondary) !important;
+            border-color: var(--csc-char-secondary) !important;
         }
         `;
     }
@@ -3352,13 +3352,13 @@ function generateGlobalCSS() {
     if (colorMapping.blockquoteBorder === 'primary') {
         css += `
         ${charSelector} .mes_text blockquote {
-            border-left: 3px solid var(--csc-primary) !important;
+            border-color: var(--csc-primary) !important;
         }
         `;
     } else if (colorMapping.blockquoteBorder === 'secondary') {
         css += `
         ${charSelector} .mes_text blockquote {
-            border-left: 3px solid var(--csc-secondary) !important;
+            border-color: var(--csc-secondary) !important;
         }
         `;
     }
@@ -3526,13 +3526,13 @@ function generateGlobalCSS() {
     if (colorMapping.blockquoteBorder === 'primary') {
         css += `
         ${userSelector} .mes_text blockquote {
-            border-left: 3px solid var(--csc-user-primary) !important;
+            border-color: var(--csc-user-primary) !important;
         }
         `;
     } else if (colorMapping.blockquoteBorder === 'secondary') {
         css += `
         ${userSelector} .mes_text blockquote {
-            border-left: 3px solid var(--csc-user-secondary) !important;
+            border-color: var(--csc-user-secondary) !important;
         }
         `;
     }
